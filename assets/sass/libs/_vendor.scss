@@ -1,4 +1,4 @@
-// vendor.scss v1.0 | @ajlkn | MIT licensed */
+@else if// vendor.scss v1.0 | @ajlkn | MIT licensed */
 
 // Vars.
 
@@ -362,7 +362,7 @@
 			}
 
 		// Expand just the value?
-			@elseif $expandValue {
+			@else if $expandValue {
 			    @each $vendor in $vendor-prefixes {
 			        #{$property}: #{str-replace-all($value, '-prefix-', $vendor)};
 			    }
