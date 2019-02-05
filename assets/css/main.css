@@ -115,7 +115,7 @@ a {
 }
 a:hover {
   border-bottom-color: transparent !important;
-  color: #6bd4c8;
+  color: #9064bf;
 }
 
 strong, b {
@@ -232,6 +232,10 @@ pre code {
 
 .align-right {
   text-align: right;
+}
+
+nav {
+  padding: 10px;
 }
 
 /* Container */
@@ -1658,7 +1662,7 @@ input[type=password]:focus,
 input[type=email]:focus,
 select:focus,
 textarea:focus {
-  border-color: #6bd4c8;
+  border-color: #9064bf;
 }
 
 select {
@@ -1750,7 +1754,7 @@ input[type=radio]:checked + label:before {
 }
 input[type=checkbox]:focus + label:before,
 input[type=radio]:focus + label:before {
-  border-color: #6bd4c8;
+  border-color: #9064bf;
 }
 
 input[type=checkbox] + label:before {
@@ -1823,13 +1827,13 @@ input[type=radio] + label:before {
   color: #8addaa;
 }
 .icon.style3:before {
-  color: #6bd4c8;
+  color: #9064bf;
 }
 .icon.style4:before {
-  color: #57aed3;
+  color: #ef6b2d;
 }
 .icon.style5:before {
-  color: #4a87d3;
+  color: #0879a1;
 }
 .icon.style6:before {
   color: #32b8af;
@@ -2334,7 +2338,7 @@ button:disabled,
 
 /* Header Gradient */
 .palerbg {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 5px;
 }
 
@@ -2434,15 +2438,6 @@ button:disabled,
 }
 #header .actions li:first-child {
   padding-left: 0;
-}
-#header .actions:after {
-  background: #ffffff;
-  content: "";
-  height: 100vh;
-  left: 50%;
-  position: absolute;
-  top: 100%;
-  width: 1px;
 }
 #header .inner {
   -moz-transition: -moz-transform 1.5s ease, opacity 2s ease;
