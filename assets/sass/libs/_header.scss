@@ -2,7 +2,8 @@
 	@include padding(2em, 0, (0,0,_size(element-margin),0));
 	@include dark(_palette(accent6-alt));
 	background-attachment:	fixed,							fixed,							fixed;
-	background-image:		url('images/overlay2.png'),		url('images/overlay3.svg'),		linear-gradient(225deg, _palette(accent1), _palette(accent1-pale) 22%, _palette(accent6-pale) 44%, _palette(accent6) 77%, _palette(accent6-alt));
+	background-image:		url('images/overlay2.png'),		url('images/overlay3.svg'),		linear-gradient(225deg, _palette(accent1), _palette(accent6) 44%, _palette(accent6-alt));
+  	// background-image:		url('images/overlay2.png'),		url('images/overlay3.svg'),		linear-gradient(225deg, _palette(accent1), _palette(accent1-pale) 22%, _palette(accent6-pale) 44%, _palette(accent6) 77%, _palette(accent6-alt));
 	background-position:	top left,						center center,					center center;
 	background-size:		auto,							cover,							cover;
 	overflow: hidden;
@@ -41,23 +42,23 @@
 	}
 
 	.inner {
-		@include vendor('transition', ('transform 1.5s ease', 'opacity 2s ease'));
-		@include vendor('transition-delay', '0.25s');
-		@include vendor('transform', 'scale(1)');
+		// @include vendor('transition', ('transform 1.5s ease', 'opacity 2s ease'));
+		// @include vendor('transition-delay', '0.25s');
+		// @include vendor('transform', 'scale(1)');
 		opacity: 1;
 		position: relative;
 		z-index: 1;
 
 		.actions {
-			@include vendor('transition', 'transform 1.25s ease');
-			@include vendor('transition-delay', '1s');
-			@include vendor('transform', 'translateY(0)');
+			// @include vendor('transition', 'transform 1.25s ease');
+			// @include vendor('transition-delay', '1s');
+			// @include vendor('transform', 'translateY(0)');
 			opacity: 1;
 		}
 	}
 
 	&:after {
-		@include vendor('transition', 'opacity 1s ease');
+		// @include vendor('transition', 'opacity 1s ease');
 		background-image: linear-gradient(45deg, _palette(accent6), _palette(accent6-alt));
 		content: '';
 		height: 100%;
@@ -68,21 +69,21 @@
 		width: 100%;
 	}
 }
-
-body.is-preload {
-	#header {
-		.inner {
-			@include vendor('transform', 'scale(1.05)');
-			opacity: 0;
-
-			.actions {
-				@include vendor('transform', 'translateY(30em)');
-				opacity: 0;
-			}
-		}
-
-		&:after {
-			opacity: 1;
-		}
-	}
-}
+//
+// body.is-preload {
+// 	#header {
+// 		.inner {
+// 			// @include vendor('transform', 'scale(1.05)');
+// 			opacity: 0;
+//
+// 			.actions {
+// 				// @include vendor('transform', 'translateY(30em)');
+// 				opacity: 0;
+// 			}
+// 		}
+//
+// 		&:after {
+// 			opacity: 1;
+// 		}
+// 	}
+// }

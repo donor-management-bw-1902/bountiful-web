@@ -21,7 +21,7 @@ header {
   justify-content: center;
 }
 nav {
-  padding: 10px;
+  padding: 20px;
   text-align: right;
   position: fixed;
   top: 0;
@@ -713,7 +713,7 @@ button,
 	border-radius: _size(border-radius);
 	border: 0;
 	box-shadow: inset 0 0 0 1px _palette(border);
-	color: _palette(fg-bold) !important;
+	color: _palette(accent1) !important;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 0.9em;
@@ -759,7 +759,7 @@ button,
 	}
 
 	&.primary {
-		background-color: _palette(fg-bold);
+		background-color: _palette(accent1);
 		box-shadow: none !important;
 		color: _palette(bg) !important;
 
@@ -796,6 +796,29 @@ button,
 		background-size:		auto,							cover;
 	}
 }
+
+html, body {
+  min-width: 320px;
+}
+
+/* Main */
+
+.main {
+  @include padding(2em, 1em);
+}
+
+/* Header */
+
+#header {
+  @include padding(3em, 1em, (0,0,_size(element-margin),0));
+}
+
+/* Footer */
+
+#footer {
+  @include padding(2em, 1em, (0,0,_size(element-margin),0));
+}
+
 
 /* Header Gradient */
 
@@ -1080,26 +1103,3 @@ button,
 //
 // 	/* Basic */
 //
-// 		html, body {
-// 			min-width: 320px;
-// 		}
-//
-// 	/* Main */
-//
-// 		.main {
-// 			@include padding(2em, 1em);
-// 		}
-//
-// 	/* Header */
-//
-// 		#header {
-// 			@include padding(3em, 1em, (0,0,_size(element-margin),0));
-// 		}
-//
-// 	/* Footer */
-//
-// 		#footer {
-// 			@include padding(2em, 1em, (0,0,_size(element-margin),0));
-// 		}
-//
-// }
