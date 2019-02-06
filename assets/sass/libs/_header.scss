@@ -42,9 +42,9 @@
 	}
 
 	.inner {
-		// @include vendor('transition', ('transform 1.5s ease', 'opacity 2s ease'));
-		// @include vendor('transition-delay', '0.25s');
-		// @include vendor('transform', 'scale(1)');
+		@include vendor('transition', ('transform 1.5s ease', 'opacity 2s ease'));
+		@include vendor('transition-delay', '0.25s');
+		@include vendor('transform', 'scale(1)');
 		opacity: 1;
 		position: relative;
 		z-index: 1;
@@ -58,7 +58,7 @@
 	}
 
 	&:after {
-		// @include vendor('transition', 'opacity 1s ease');
+		@include vendor('transition', 'opacity 1s ease');
 		background-image: linear-gradient(45deg, _palette(accent6), _palette(accent6-alt));
 		content: '';
 		height: 100%;
@@ -68,22 +68,28 @@
 		top: 0;
 		width: 100%;
 	}
+
+
+  // .button.primary {
+  //     @include vendor('animation', 'none !important');
+  //     @include vendor('transition', 'none !important');
+  // }
 }
-//
-// body.is-preload {
-// 	#header {
-// 		.inner {
-// 			// @include vendor('transform', 'scale(1.05)');
-// 			opacity: 0;
-//
-// 			.actions {
-// 				// @include vendor('transform', 'translateY(30em)');
-// 				opacity: 0;
-// 			}
-// 		}
-//
-// 		&:after {
-// 			opacity: 1;
-// 		}
-// 	}
-// }
+
+body.is-preload {
+	#header {
+		.inner {
+			// @include vendor('transform', 'scale(1.05)');
+			// opacity: 0;
+
+			.actions {
+				// @include vendor('transform', 'translateY(30em)');
+				// opacity: 0;
+			}
+		}
+
+		&:after {
+			opacity: 1;
+		}
+	}
+}
