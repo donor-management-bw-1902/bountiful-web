@@ -210,32 +210,34 @@ ul.actions {
 
 .container {
 	margin: 0 auto;
-	max-width: calc(100% - #{_size(element-margin) * 2});
-	width: _size(container-width);
+	// max-width: calc(100% - #{_size(element-margin) * 2});
+	// width: _size(container-width);
+  max-width: 90em;
+  width: 100%;
 
-	&.xsmall {
-		width: (_size(container-width) * 0.25);
-	}
-
-	&.small {
-		width: (_size(container-width) * 0.5);
-	}
-
-	&.medium {
-		width: (_size(container-width) * 0.75);
-	}
-
-	&.large {
-		width: (_size(container-width) * 1.25);
-	}
-
-	&.xlarge {
-		width: (_size(container-width) * 1.5);
-	}
-
-	&.max {
-		width: 100%;
-	}
+	// &.xsmall {
+	// 	width: (_size(container-width) * 0.25);
+	// }
+  //
+	// &.small {
+	// 	width: (_size(container-width) * 0.5);
+	// }
+  //
+	// &.medium {
+	// 	width: (_size(container-width) * 0.75);
+	// }
+  //
+	// &.large {
+	// 	width: (_size(container-width) * 1.25);
+	// }
+  //
+	// &.xlarge {
+	// 	width: (_size(container-width) * 1.5);
+	// }
+  //
+	// &.max {
+	// 	width: 100%;
+	// }
 
 	// @include breakpoint('<=medium') {
 	// 	max-width: 100% !important;
@@ -1026,16 +1028,19 @@ html, body {
 // 	/* Basic */
 //
 
-#compassbar {
+#compass-bar {
   padding: 20px;
   text-align: right;
   position: fixed;
   top: 0;
   width: 100%;
   max-width: 100%;
-  #compassicon {
+  #compass-icon {
     // display: flex;
     color: _palette(accent1);
+    &:hover {
+      // css animation spin here
+    }
   }
 }
 

@@ -6394,8 +6394,8 @@ ul.actions.fit.stacked {
 
 .container {
   margin: 0 auto;
-  max-width: calc(100% - 4em);
-  width: 60em;
+  max-width: 90em;
+  width: 100%;
 }
 .container.xsmall {
   width: 15em;
@@ -7158,7 +7158,7 @@ ul.major-icons li .icon:before {
   margin: 0 0 1em 0;
 }
 
-#compassbar {
+#compass-bar {
   padding: 20px;
   text-align: right;
   position: fixed;
@@ -7166,10 +7166,9 @@ ul.major-icons li .icon:before {
   width: 100%;
   max-width: 100%;
 }
-#compassbar #compassicon {
+#compass-bar #compass-icon {
   color: #faa322;
 }
-
 @media (min-width: 900px) {
   body, input, select, textarea {
     font-size: 13pt;
