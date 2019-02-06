@@ -1,5 +1,5 @@
 #header {
-	@include padding(2em, 0, (0,0,_size(element-margin),0));
+	@include padding(1em, 0, (0,0,_size(element-margin),0));
 	@include dark(_palette(accent6-alt));
 	background-attachment:	fixed,							fixed,							fixed;
 	background-image:		url('images/overlay2.png'),		url('images/overlay3.svg'),		linear-gradient(225deg, _palette(accent1), _palette(accent6) 44%, _palette(accent6-alt));
@@ -28,17 +28,18 @@
 			&:first-child {
 				padding-left: 0;
 			}
+      // &:last-child:after {
+      //     background: _palette(dark, border);
+      //     content: '';
+      //     height: 100vh;
+      //     position: absolute;
+      //     top: 100%;
+      //     width: 1px;
+      //   }
+
 		}
 
-		// &:after {
-		// 	background: _palette(dark, border);
-		// 	content: '';
-		// 	height: 100vh;
-		// 	left: 50%;
-		// 	position: absolute;
-		// 	top: 100%;
-		// 	width: 1px;
-		// }
+
 	}
 
 	.inner {
@@ -50,9 +51,9 @@
 		z-index: 1;
 
 		.actions {
-			// @include vendor('transition', 'transform 1.25s ease');
-			// @include vendor('transition-delay', '1s');
-			// @include vendor('transform', 'translateY(0)');
+			@include vendor('transition', 'transform 1.25s ease');
+			@include vendor('transition-delay', '1s');
+			@include vendor('transform', 'translateY(0)');
 			opacity: 1;
 		}
 	}
@@ -70,21 +71,21 @@
 	}
 
 
-  // .button.primary {
-  //     @include vendor('animation', 'none !important');
-  //     @include vendor('transition', 'none !important');
-  // }
+  .button.primary {
+      @include vendor('animation', 'none !important');
+      @include vendor('transition', 'none !important');
+  }
 }
 
 body.is-preload {
 	#header {
 		.inner {
-			// @include vendor('transform', 'scale(1.05)');
-			// opacity: 0;
+			@include vendor('transform', 'scale(1.05)');
+			opacity: 0;
 
 			.actions {
-				// @include vendor('transform', 'translateY(30em)');
-				// opacity: 0;
+				@include vendor('transform', 'translateY(30em)');
+				opacity: 0;
 			}
 		}
 
@@ -93,3 +94,7 @@ body.is-preload {
 		}
 	}
 }
+
+// #header {
+//   @include padding(3em, 1em, (0,0,_size(element-margin),0));
+// }

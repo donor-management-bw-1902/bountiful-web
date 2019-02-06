@@ -4,7 +4,10 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
-@import url('font-awesome.min.css');
+// @import url('font-awesome.min.css');
+@import '../fa/fontawesome.scss';
+@import '../fa/solid.scss';
+@import '../fa/brands.scss';
 // @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import 'libs/reset';
@@ -12,6 +15,27 @@
 @import 'libs/button';
 @import 'libs/header';
 @import 'libs/footer';
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.woff') format("woff"),
+       url('../fonts/fontawesome-webfont.woff2') format("woff2"),
+       url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+       url('../fonts/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// .twitter {
+//   @extend %fa-icon;
+//   @extend .fab;
+//
+//   &:before {
+//     content: fa-content($fa-var-twitter);
+//   }
+// }
 
 
 header {
@@ -22,35 +46,34 @@ header {
   justify-content: center;
 }
 
-.compassbar {
-  padding: 20px;
-  text-align: right;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  max-width: 100%;
-  .icon.compassicon {
-    color: _palette(accent1);
-  }
+.bcflogo {
+  margin-bottom: 1em;
 }
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button,
-.button {
-  width: 100%;
 
-  // &.icon {
-  //   &:before {
-  //     margin-left: -0.5em;
-  //   }
-  // }
-}
 
-.button {
-  padding: 5px;
-}
+// input[type="submit"],
+// input[type="reset"],
+// input[type="button"],
+// button,
+// .button {
+//   width: 85%;
+//
+//   // &.icon {
+//   //   &:before {
+//   //     margin-left: -0.5em;
+//   //   }
+//   // }
+//
+//   // @include breakpoint(tablet) {
+//   //   width: 45%;
+//   // }
+//
+// }
+
+// .button {
+//   padding: 5px;
+// }
 
 ul {
 	list-style: disc;
@@ -79,7 +102,8 @@ ul {
 
 ul.actions {
 	@include vendor('display', 'flex');
-  @include vendor('flex-wrap', 'row');
+  @include vendor('flex-direction', 'row');
+  @include vendor('flex-wrap', 'wrap');
 	cursor: default;
 	list-style: none;
 	margin-left: (_size(element-margin) * -0.5);
@@ -133,6 +157,11 @@ ul.actions {
 		}
 	}
 
+    // @include breakpoint(phablet) {
+    //   @include vendor('flex-direction', 'row');
+    //   @include vendor('flex-wrap', 'wrap');
+    // }
+
 	// @include breakpoint('<=xsmall') {
 	// 	&:not(.fixed) {
 	// 		@include vendor('flex-direction', 'column');
@@ -161,10 +190,10 @@ ul.actions {
 	// 			.button {
 	// 				width: 100%;
   //
-	// 				// &.icon {
-	// 				// 	&:before {
-	// 				// 		margin-left: -0.5em;
-	// 				// 	}
+					// &.icon {
+					// 	&:before {
+					// 		margin-left: -0.5em;
+					// 	} }
 	// 				}
 	// 			}
 	// 		}
@@ -203,14 +232,14 @@ ul.actions {
 		width: 100%;
 	}
 
-	@include breakpoint('<=medium') {
-		max-width: 100% !important;
-		width: 100% !important;
-	}
+	// @include breakpoint('<=medium') {
+	// 	max-width: 100% !important;
+	// 	width: 100% !important;
+	// }
 
-	@include breakpoint('<=xsmall') {
-		max-width: calc(100% - #{_size(element-margin) * 1.5});
-	}
+	// @include breakpoint('<=xsmall') {
+	// 	max-width: calc(100% - #{_size(element-margin) * 1.5});
+	// }
 }
 
 /* Row */
@@ -254,7 +283,7 @@ section, article {
 header {
 	p {
 		color: _palette(fg-light);
-		margin: 0 0 (_size(element-margin) * 0.75) 0;
+		margin: 0;
 		position: relative;
 	}
 
@@ -279,7 +308,7 @@ header {
 	}
 
 	&.major {
-		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		// margin: 0 0 (_size(element-margin) * 0.5) 0;
 
 		&:after {
 			background: _palette(border);
@@ -752,9 +781,6 @@ html, body {
 
 /* Header */
 
-#header {
-  @include padding(3em, 1em, (0,0,_size(element-margin),0));
-}
 
 /* Footer */
 
@@ -1029,3 +1055,20 @@ html, body {
 //
 // 	/* Basic */
 //
+
+.compassbar {
+  padding: 20px;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  .compassicon {
+    // display: flex;
+    color: _palette(accent1);
+  }
+  a:-webkit-any-link {
+    text-decoration: none currentcolor solid !important;
+    text-decoration-line: none !important;
+  }
+}
