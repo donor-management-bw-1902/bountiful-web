@@ -9,6 +9,8 @@
 	overflow: hidden;
 	position: relative;
 	text-align: center;
+  max-width: 100%;
+  object-fit: fill;
 
 	h1 {
 		margin: 0;
