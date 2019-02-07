@@ -34,6 +34,7 @@ class Compass {
   openMenu() {
     event.preventDefault();
     event.stopPropagation();
+    
   };
 }
 

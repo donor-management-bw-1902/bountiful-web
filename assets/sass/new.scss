@@ -54,6 +54,17 @@ header {
   @include breakpoint(nokia) {
     width: 224px;
   }
+    // opacity: 0;
+    // overflow: hidden;
+    // width: 0%;
+    // height: 50px;
+    // margin: 50px;
+    // background-color: brown;
+    // color: white;
+    // -webkit-transition: width 1000ms ease-in, opacity 1s ease-out;
+    // -moz-transition: width 1000ms ease-in, opacity 1s ease-out;
+    // -o-transition: width 1000ms ease-in, opacity 1s ease-out;
+    // transition: width 1000ms ease-in, opacity 1s ease-out;
 
 }
 
@@ -778,10 +789,6 @@ table {
 	}
 }
 
-html, body {
-  min-width: 320px;
-}
-
 /* Main */
 
 .main {
@@ -1046,6 +1053,31 @@ html, body {
   }
 }
 
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
 @include breakpoint(tablet) {
   body, input, select, textarea {
     font-size: 13pt;
@@ -1127,14 +1159,14 @@ html, body {
 
 }
 
-@include breakpoint(nokia) {
-  body, input, select, textarea {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    font-size: 9pt;
-
-  }
-  // body {
-  // max-width: 100vw;
-  // }
-}
+// @include breakpoint(nokia) {
+//   body, input, select, textarea {
+//     padding-left: 0 !important;
+//     padding-right: 0 !important;
+//     font-size: 10pt !important;
+//
+//   }
+//   // body {
+//   // max-width: 100vw;
+//   // }
+// }

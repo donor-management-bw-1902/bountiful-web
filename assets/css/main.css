@@ -6160,7 +6160,7 @@ button,
   top: 0;
   width: 100%;
 }
-#header .button.primary {
+#header .button.primary.wide {
   -moz-animation: none !important;
   -webkit-animation: none !important;
   -ms-animation: none !important;
@@ -7134,10 +7134,6 @@ table.alt tfoot {
   color: #ffffff;
 }
 
-html, body {
-  min-width: 320px;
-}
-
 /* Main */
 .main {
   padding: 2em 1em 0.1em 1em;
@@ -7177,6 +7173,42 @@ ul.major-icons li .icon:before {
 }
 #compass-bar #compass-icon {
   color: #faa322;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    transform: rotate(0deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    transform: rotate(360deg);
+    /* Firefox 16+, IE 10+, Opera */
+  }
 }
 @media (min-width: 900px) {
   body, input, select, textarea {
@@ -7250,13 +7282,6 @@ ul.major-icons li .icon:before {
   /* Basic */
   body, input, select, textarea {
     font-size: 15pt;
-  }
-}
-@media (max-width: 350px) {
-  body, input, select, textarea {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    font-size: 9pt;
   }
 }
 

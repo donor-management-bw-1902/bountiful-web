@@ -75,7 +75,7 @@
 	}
 
 
-  .button.primary {
+  .button.primary.wide {
       @include vendor('animation', 'none !important');
       @include vendor('transition', 'none !important');
   }
