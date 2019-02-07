@@ -30,7 +30,7 @@
 
 // Misc.
 	$misc: (
-		z-index-base:		10000
+		z-index-base:		1
 	);
 
 // Duration.
@@ -76,6 +76,9 @@
 		accent4-alt:		desaturate(darken(#57aed3, 15), 20),
 		accent5-alt:		desaturate(darken(#4a87d3, 15), 20),
 		accent6-alt:		desaturate(darken(#32b8af, 15), 20),
+    accent1-pale:   desaturate(lighten(#faa322, 10), 10),
+    accent6-pale:   desaturate(lighten(#32b8af, 10), 10),
+    accent1-brighten: saturate(lighten(#faa322, 15), 20),
 
 		dark: (
 			bg:				#666666,
