@@ -6433,9 +6433,13 @@ ul.actions.fit.stacked {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 auto 2em;
   max-width: 90em;
   width: 100%;
+}
+
+.wordbox p {
+  margin-bottom: 1em;
 }
 
 /* Row */
@@ -7177,12 +7181,22 @@ ul.major-icons li .icon:before {
 }
 
 #compass-bar {
-  padding: 20px;
   text-align: right;
   position: fixed;
-  top: 0;
-  width: 100%;
-  max-width: 100%;
+  top: 1em;
+  right: 1em;
+  width: 10em;
+}
+#compass-bar #navpanel {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
 }
 #compass-bar #compass-icon {
   color: #faa322;
@@ -7190,6 +7204,10 @@ ul.major-icons li .icon:before {
 #compass-bar #compass-icon:hover {
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 @-webkit-keyframes spin {
@@ -7301,6 +7319,9 @@ ul.major-icons li .icon:before {
   body, input, select, textarea {
     font-size: 16pt;
   }
+}
+.facepic {
+  width: 20em;
 }
 
 /*# sourceMappingURL=main.css.map */
