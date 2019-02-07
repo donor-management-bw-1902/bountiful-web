@@ -2,6 +2,7 @@
 // Component is intended to exhibit "progressive enhancement."
 // "What does that mean?" If the person is blocking or can't run the JS file,
 // or the JS file doesn't load, it doesn't engage the meaningful menu elements.
+// Instead it operates the HTML file's default behavior, which is a simple clickable link.
 // This is roughly what the HTML and CSS should look like to begin with:
 
 // HTML reference:
