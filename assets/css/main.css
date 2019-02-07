@@ -7197,7 +7197,7 @@ ul.major-icons li .icon:before {
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-  height: 50em;
+  height: 100%;
   width: 100%;
 }
 #compass-bar .nav-button {
