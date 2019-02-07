@@ -7185,9 +7185,9 @@ ul.major-icons li .icon:before {
   position: fixed;
   top: 1em;
   right: 1em;
-  width: 10em;
+  width: 15em;
 }
-#compass-bar #navpanel {
+#compass-bar #nav-panel {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -7197,6 +7197,11 @@ ul.major-icons li .icon:before {
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
+  height: 50em;
+  width: 100%;
+}
+#compass-bar .nav-button {
+  width: 100%;
 }
 #compass-bar #compass-icon {
   color: #faa322;

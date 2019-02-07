@@ -1050,14 +1050,21 @@ table {
   position: fixed;
   top: 1em;
   right: 1em;
-  width: 10em;
-  #navpanel {
+  width: 15em;
+  #nav-panel {
     @include vendor('display', 'flex');
     @include vendor('flex-direction', 'column');
     // max-width: 10em;
     // padding: 1em;
     position: absolute;
     // right: em;
+    // z-index: 2;
+    height: 50em;
+    width: 100%;
+  }
+  .nav-button {
+    // z-index: 2;
+    width: 100%;
   }
   #compass-icon {
     // display: flex;

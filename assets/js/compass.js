@@ -27,7 +27,7 @@ class Compass {
   constructor(parent) {
     this.bar = parent;
     // this.icon = this.bar.querySelector('#compass-icon');
-    this.panel = this.bar.querySelector('#navpanel');
+    this.panel = this.bar.querySelector('#nav-panel');
     this.initLink = this.bar.querySelector('#compass-link');
     this.initLink.addEventListener('click', ()=> {this.openMenu()});
     // icon.addEventListener('mouseover', ()=> {});
