@@ -26,7 +26,7 @@
 class Compass {
   constructor(parent) {
     this.bar = parent;
-    // this.icon = this.bar.querySelector('#compass-icon');
+    this.icon = this.bar.querySelector('#compass-icon');
     this.panel = this.bar.querySelector('#nav-panel');
     this.initLink = this.bar.querySelector('#compass-link');
     this.initLink.addEventListener('click', ()=> {this.openMenu()});
@@ -36,6 +36,9 @@ class Compass {
     event.preventDefault();
     event.stopPropagation();
     this.panel.classList.toggle('invisible');
+    // this.icon.style.zIndex = "9999";
+    this.bar.style.zIndex = "9999";
+    // this.panel.style.zIndex = "9999";
   };
 }
 

@@ -6919,10 +6919,12 @@ input[type=radio] + label:before {
   border: 0;
   display: inline-block;
   position: relative;
+  z-index: 0;
 }
 .image img {
   border-radius: 4px;
   display: block;
+  z-index: 0;
 }
 .image.left {
   float: left;
@@ -7197,10 +7199,12 @@ ul.major-icons li .icon:before {
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
+  z-index: 9999;
   height: 100%;
   width: 100%;
 }
 #compass-bar .nav-button {
+  z-index: 9999;
   width: 100%;
 }
 #compass-bar #compass-icon {
