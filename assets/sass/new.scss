@@ -51,7 +51,9 @@ header {
   margin-bottom: 1em;
   width: 336px;
 
-  // @include breakpoints(phone)
+  @include breakpoint(nokia) {
+    width: 224px;
+  }
 
 }
 
@@ -1123,4 +1125,16 @@ html, body {
 			font-size: 15pt;
 		}
 
+}
+
+@include breakpoint(nokia) {
+  body, input, select, textarea {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 9pt;
+
+  }
+  // body {
+  // max-width: 100vw;
+  // }
 }

@@ -17,6 +17,9 @@ BREAKPOINTS
   }
   @else if $point == mobileonly {
      @media (max-width: 600px)  { @content ; }
-
   }
+  @else if $point == nokia {
+     @media (max-width: 350px)  { @content ; }
+  }
+  // Why must I do this?
 }

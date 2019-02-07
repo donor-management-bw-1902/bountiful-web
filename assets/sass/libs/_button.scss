@@ -52,6 +52,9 @@ button,
 
 	&.wide {
 		min-width: 20em;
+    @include breakpoint(nokia) {
+      min-width: 17em;
+    }
 	}
 
 	&.primary {
@@ -73,4 +76,11 @@ button,
 		cursor: default;
 		opacity: 0.25;
 	}
+
+  @include breakpoint(nokia) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
