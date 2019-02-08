@@ -576,6 +576,18 @@ input[type="radio"] {
 			line-height: 1em;
 		}
 	}
+
+  &.devteam {
+    @include icon;
+    color: _palette(accent3);
+    cursor: default;
+    display: inline-block;
+    margin: 0 0 (_size(element-margin) * 0.75) 0;
+    &:before {
+      font-size: 2em;
+      // line-height: 1em;
+    }
+  }
 }
 
 /* Image */
@@ -1047,7 +1059,6 @@ table {
 //
 
 #compass-bar {
-  // padding: 1em;
   text-align: right;
   position: fixed;
   top: 1em;
@@ -1056,21 +1067,14 @@ table {
   #nav-panel {
     @include vendor('display', 'flex');
     @include vendor('flex-direction', 'column');
-    // max-width: 10em;
-    // padding: 1em;
     position: absolute;
-    // right: em;
-    z-index: 9999;
     height: 100%;
     width: 100%;
   }
   .nav-button {
-    z-index: 9999;
     width: 100%;
-    // position: absolute;
   }
   #compass-icon {
-    // display: flex;
     color: _palette(accent1);
     &:hover {
       -webkit-animation: spin 1.5s linear infinite;

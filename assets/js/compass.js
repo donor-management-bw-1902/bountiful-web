@@ -10,17 +10,113 @@
 //   <a href="#" id="compass-link"><i id="compass-icon" class="major icon fa-compass"></i></a>
 // </nav>
 // CSS reference:
-// #compassbar {
-//   padding: 20px;
+// #compass-bar {
+//   // padding: 1em;
 //   text-align: right;
 //   position: fixed;
-//   top: 0;
-//   width: 100%;
-//   max-width: 100%;
-//   #compassicon {
-//     // display: flex;
-//     color: _palette(accent1);
+//   top: 1em;
+//   right: 1em;
+//   width: 15em;
+//   #nav-panel {
+//     @include vendor('display', 'flex');
+//     @include vendor('flex-direction', 'column');
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
 //   }
+//   .nav-button {
+//     width: 100%;
+//   }
+//   #compass-icon {// #compass-bar {
+//   text-align: right;
+//   position: fixed;
+//   top: 1em;
+//   right: 1em;
+//   width: 15em;
+//   #nav-panel {
+//     @include vendor('display', 'flex');
+//     @include vendor('flex-direction', 'column');
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//   }
+//   .nav-button {
+//     width: 100%;
+//   }
+//   #compass-icon {
+//     color: _palette(accent1);
+//     &:hover {
+//       -webkit-animation: spin 1.5s linear infinite;
+//       animation: spin 1.5s linear infinite;
+//     }
+//   }
+// }
+//
+// .invisible {
+//   visibility: hidden;
+// }
+//
+// @-webkit-keyframes spin {
+//     0%   {
+//         -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+//         -ms-transform: rotate(0deg);  /* IE 9 */
+//         transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+//     }
+//     100% {
+//         -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+//         -ms-transform: rotate(360deg);  /* IE 9 */
+//         transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+//     }
+// }
+//
+// @keyframes spin {
+//     0%   {
+//         -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+//         -ms-transform: rotate(0deg);  /* IE 9 */
+//         transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+//     }
+//     100% {
+//         -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+//         -ms-transform: rotate(360deg);  /* IE 9 */
+//         transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+//     }
+// }
+//     color: _palette(accent1);
+//     &:hover {
+//       -webkit-animation: spin 1.5s linear infinite;
+//       animation: spin 1.5s linear infinite;
+//     }
+//   }
+// }
+//
+// .invisible {
+//   visibility: hidden;
+// }
+//
+// @-webkit-keyframes spin {
+//     0%   {
+//         -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+//         -ms-transform: rotate(0deg);  /* IE 9 */
+//         transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+//     }
+//     100% {
+//         -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+//         -ms-transform: rotate(360deg);  /* IE 9 */
+//         transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+//     }
+// }
+//
+// @keyframes spin {
+//     0%   {
+//         -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+//         -ms-transform: rotate(0deg);  /* IE 9 */
+//         transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+//     }
+//     100% {
+//         -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+//         -ms-transform: rotate(360deg);  /* IE 9 */
+//         transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+//     }
 // }
 
 class Compass {

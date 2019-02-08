@@ -6912,6 +6912,24 @@ input[type=radio] + label:before {
   font-size: 4em;
   line-height: 1em;
 }
+.icon.devteam {
+  text-decoration: none;
+  color: #9064bf;
+  cursor: default;
+  display: inline-block;
+  margin: 0 0 1.5em 0;
+}
+.icon.devteam:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.icon.devteam:before {
+  font-size: 2em;
+}
 
 /* Image */
 .image {
@@ -7199,12 +7217,10 @@ ul.major-icons li .icon:before {
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-  z-index: 9999;
   height: 100%;
   width: 100%;
 }
 #compass-bar .nav-button {
-  z-index: 9999;
   width: 100%;
 }
 #compass-bar #compass-icon {
